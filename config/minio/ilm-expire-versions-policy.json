@@ -1,0 +1,14 @@
+{
+  "Rules": [
+    {
+      "Expiration": {
+        "ExpiredObjectDeleteMarker": true
+      },
+      "ID": "expire-after-30-days",
+      "NoncurrentVersionExpiration": {
+        "NoncurrentDays": 30
+      },
+      "Status": "Enabled"
+    }
+  ]
+}

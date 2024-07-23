@@ -1,0 +1,14 @@
+      {
+      "Rules": [
+        {
+          "AbortIncompleteMultipartUpload": {
+            "DaysAfterInitiation": 1
+          },
+          "Expiration": {
+            "Days": 7
+          },
+          "ID": "CachedFiles",
+          "Status": "Enabled"
+        }
+      ]
+    }
