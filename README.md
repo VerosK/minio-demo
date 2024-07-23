@@ -122,3 +122,11 @@ export AWS_ENDPOINT_URL=http://localhost:9000
 
 aws s3 ls
 ```
+
+
+# License:
+
+Use, abuse or remix.
+
+ * CC0 or WTFPL
+ 
