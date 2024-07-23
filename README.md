@@ -111,17 +111,44 @@ minioc put README.md minio/data
 
 ## aws cli (doesn't work)
 
-One should be able to use `aws s3` cli to interact with minio, but it doesn't 
-at the moment. I don't know why. 
+One is able to use `aws s3` and `aws s3api` cli commands to interact with minio.
+
+Beware: `aws` cli should be updated to 2023 or newer.
 
 ```shell
 export AWS_ACCESS_KEY_ID=minioadmin
 export AWS_SECRET_ACCESS_KEY=minio123
 export AWS_DEFAULT_REGION=us-east-1
-export AWS_ENDPOINT_URL=http://localhost:9000
+export AWS_ENDPOINT_URL_S3=http://localhost:9000
 
+# friendly s3 ls
 aws s3 ls
-```
+
+# raw api call
+aws  s3api list-buckets
+``` 
+
+# Minio/S3 features
+
+ * object/blob persistent storage
+ * public / authorized access
+ * put, get, list and delete calls
+ * versioning
+ * lifecycle policies
+ * presigned URLs
+ 
+
+### Advanced features:
+
+ * range requests
+ * multipart upload
+ * encryption
+ * access control
+ * storage classes
+ * event notifications
+ * object locking
+ * async replication to other buckets
+ * ... many more
 
 
 # License:
